@@ -23,6 +23,11 @@ public class Electronic implements HouseholdItem{
 		this.fragile = fragile;
 	}
 
+	  //accept the visitor
+	  public void accept(Visitor v) {
+	    v.visit(this);
+	  }
+	
 	
 //Getters and Setters
 

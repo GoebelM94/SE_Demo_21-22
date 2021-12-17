@@ -20,6 +20,11 @@ public class Glass implements HouseholdItem{
 	}
 
 
+	  //accept the visitor
+	  public void accept(Visitor v) {
+	    v.visit(this);
+	  }
+	
 
 //Getters and Setters =
 
